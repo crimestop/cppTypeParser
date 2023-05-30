@@ -1,0 +1,40 @@
+html {
+    overflow-y: scroll; /* always display scroll bar to prevent abrupt left shift */
+}
+
+body{
+    background-color: #f8f8f8;
+    margin: 0;
+    padding:0;
+    font-family: PingFang SC;
+}
+
+.global{
+    background-color: #ffffff;
+    width: 801px;
+    min-height: 800px;
+    margin:  auto;
+    padding:5px 10px 100px 10px;
+}
+.result{
+    margin: 20px 0;
+}
+
+
+.content {
+    margin: 10px 10px;
+}
+
+
+.elem{
+/*    background: #cd5c5c;*/
+    padding: 10px 10px;
+    margin: 0 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+}
+.elem-content{
+    padding: 2px 0;
+    display: none;
+}
