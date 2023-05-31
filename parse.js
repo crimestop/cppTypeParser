@@ -1,14 +1,11 @@
-function show_hide(ev,slf){
+function show_hide(ev){
 	ev.stopPropagation();
-	let style = window.getComputedStyle(slf.firstElementChild);
+	let style = window.getComputedStyle(this.firstElementChild);
 	if (style.display === "inline-block")
-		slf.firstElementChild.style.display = "none";
+		this.firstElementChild.style.display = "none";
 	else
-		slf.firstElementChild.style.display = "inline-block";
+		this.firstElementChild.style.display = "inline-block";
 	// alert(document.getElementById("version-url").href);
-}
-function show_hide_wrapper(event){
-	show_hide(event,this);
 }
 
 class Type{
@@ -21,9 +18,6 @@ class Type{
 	}
 	next(){
 		this.pos++;
-	}
-	ended(){
-		return this.pos >= this.words.length;
 	}
 	present(){
 		if (this.pos < this.words.length)
@@ -38,7 +32,7 @@ function parse(){
 	const output = document.getElementById("output");
 	while (output.firstChild) {
 		output.removeChild(output.firstChild);
-	  }
+	}
 	//alert(input.value);
 	parse_inner(output,new Type(input.value));
 }
@@ -71,7 +65,7 @@ function parse_inner(slf,type){
 			string_item = '';
 			child = slf.appendChild(document.createElement("div"));
 			child.className = "elem";
-			child.addEventListener("click",show_hide_wrapper);
+			child.addEventListener("click",show_hide);
 			child.appendChild(document.createTextNode('\u200b'));
 			grandchild = child.appendChild(document.createElement("div"));
 			grandchild.className = "elem-content";
