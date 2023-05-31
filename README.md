@@ -5,7 +5,7 @@ The web page is deployed [here](https://crimestop.github.io/cppTypeParser/).
 
 ## Usage
 
-Please insert C++ type in the input block and click the "parse the type" button.
+Please input the C++ type and click the "parse the type" button.
 
 The parsed type is shown below and the hidden block can be clicked to expand and hide.
 
