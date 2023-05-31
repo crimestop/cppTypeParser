@@ -2,15 +2,26 @@
 <head>
 	<title>cppTypeParser</title>
 	<link rel="stylesheet" type="text/css" href="./main.css" id="lnk">
+    <link rel="icon" href="./pic/icon.svg">
 	<!-- <script src="mob_view.js"></script> -->
 	<script src="parse.js"></script>
 </head>
 <body>
 <div class="global">
-
+	<div class="header">
+		<img src="pic/logo.svg" width="410px" class="logo"/>
+		<span class="nav-cells">
+			<span class="nav-cell nav-cell-other" id="nav-cell-2">
+				<a href="https://github.com/crimestop/cppTypeParser">Github</a>
+			</span>
+			<span class="nav-cell nav-cell-other" id="nav-cell-3">
+				<a href = "mailto: wangchao1@iai.ustc.edu.cn">Contact Us</a>
+			</span>
+		</span>
+			
+	</div>
 	<!-- main-content -->
-	<input type="text" id="input" size=100 value="a<b<c,d>,e,f<g>>">
-	<button onclick="parse()">parse</button>
+	<button onclick="parse()">parse the type:</button> <input type="text" id="input" size=127 value="std::tuple<std::map<int, int, std::less<int>, std::allocator<std::pair<const int, int> > >, std::map<typename Key::SiteKeyType, int, std::less<typename Key::SiteKeyType>, std::allocator<std::pair<const typename Key::SiteKeyType, int> > >, QCTN::Circuit_Pure<Key>, double>">
 	<div class="result" id="output">
 	</div>
 </div>

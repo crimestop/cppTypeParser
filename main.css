@@ -11,26 +11,36 @@ body{
 
 .global{
     background-color: #ffffff;
-    width: 801px;
-    min-height: 800px;
+    width: 1001px;
+    min-height: 1000px;
     margin:  auto;
-    padding:5px 10px 100px 10px;
+    padding:5px 15px 100px 15px;
+}
+.header {
+    position: relative;
+    vertical-align: middle;
+    padding: 15px 0;
+    margin: 0;
+}
+.logo{
+    vertical-align: middle;
+}
+.nav-cell{
+    margin: 10pt;
+}
+.nav-cells{
+    margin: 0 0 0 250pt;
 }
 .result{
     margin: 20px 0;
 }
 
-
-.content {
-    margin: 10px 10px;
-}
-
-
 .elem{
 /*    background: #cd5c5c;*/
     padding: 10px 10px;
     margin: 0 2px;
-    border: 1px solid black;
+    border: 2px solid white;
+    background-color: #eeeeee;
     border-radius: 5px;
     display: inline-block;
 }
