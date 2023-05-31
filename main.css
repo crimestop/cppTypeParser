@@ -9,7 +9,7 @@ body{
     font-family: PingFang SC;
 }
 .hbar{
-    height:2px;
+    height:1px;
     border-width:0;
     color:#999;
     background-color:#999;
@@ -30,15 +30,18 @@ body{
     vertical-align: middle;
 }
 .nav-cell{
-    margin: 10pt;
+    margin: 10px;
 }
 .nav-cells{
-    margin: 0 0 0 250pt;
+    margin: 0 0 0 400px;
 }
+.input{
+    margin: 10px 0;
+}
+
 .result{
     margin: 20px 0;
 }
-
 .elem{
 /*    background: #cd5c5c;*/
     padding: 10px 10px;
